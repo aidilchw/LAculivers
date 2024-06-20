@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA culivers Menu's</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="short icon" href="image/icon.png">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo"> <i class="fa fa-birthday-cake"></i> LA culivers</div>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">home</a>
+            <a href="#menu">menu</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="login.html" class="login">Login</a>
+        </div>
+
+    </header>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <h1 class="heading">Minuman</h1><br>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/menu-1.png" alt="">
+                <h3>Caramel Coffee</h3>
+                <div class="price">Rp.22.000</div>
+                <button type="button" class="add-to-cart" data-name="Caramel Coffee" data-price="22000">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="image/menu-1.png" alt="">
+                <h3>Classic Coffee Espresso</h3>
+                <div class="price">Rp.15.000</div>
+                <button type="button" class="add-to-cart" data-name="Classic Coffee Espresso" data-price="15000">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="image/menu-1.png" alt="">
+                <h3>Caramel Cream Coffee</h3>
+                <div class="price">Rp.18.000</div>
+                <button type="button" class="add-to-cart" data-name="Caramel Cream Coffee" data-price="18000">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="image/menu-1.png" alt="">
+                <h3>Minang Coffee</h3>
+                <div class="price">Rp.20.000</div>
+                <button type="button" class="add-to-cart" data-name="Minang Coffee" data-price="20000">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="image/menu-1.png" alt="">
+                <h3>Red Velvet</h3>
+                <div class="price">Rp.15.000</div>
+                <button type="button" class="add-to-cart" data-name="Red Velvet" data-price="15000">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="image/menu-1.png" alt="">
+                <h3>Lemon Ice Tea</h3>
+                <div class="price">Rp.20.000</div>
+                <button type="button" class="add-to-cart" data-name="Lemon Ice Tea" data-price="20000">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <section class="cart" id="cart">
+        <h1 class="heading">Your Cart</h1><br>
+
+        <div class="cart-container">
+            <ul id="cart-items">
+                <!-- Cart items will be appended here -->
+            </ul>
+            <div class="total">
+                <h3>Total: Rp.<span id="cart-total">0</span></h3>
+                <button type="button" id="checkout" class="checkout">Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

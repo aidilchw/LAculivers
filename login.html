@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="short icon" href="image/icon.png">
+    <title>Login Account</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+          background-image: url("image/bg.png");
+          background-position: center;
+          background-size: cover;
+          backdrop-filter: brightness(35%);
+        }
+      </style>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="index.php" method="POST">
+                <h1>Buat Akun</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span>Silahkan isi data anda</span>
+                <input type="text" placeholder="Nama" name="nama">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <input type="text" placeholder="alamat" name="alamat">
+                <input type="text" placeholder="nohp" name="nohp">
+                <button type="submit" name="register">Daftar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="menu.php" method="POST">
+                <h1>Masuk</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span>gunakan email dan password</span>
+                <input type="text" placeholder="nama" name="nama">
+                <input type="password" placeholder="Password" name="password">
+                <a href="#">Lupa Password?</a>
+                <button type="submit" name="login">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Daftar Akun</h1>
+                    <p>Isi biodata diri anda</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Belum Punya Akun?</h1>
+                    <p>Daftar Disini...</p>
+                    <button class="hidden" id="register">Daftar</button>
+                    <a href="index.html">kembali</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
